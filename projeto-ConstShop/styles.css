@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-image: url(./img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    background-position: bottom;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0% 10% ;
+    
+    
+}
+
+.icone-nav {
+    width: 120px;
+    height: 100px;
+    margin-top: 5px;
+}
+
+.nav-itens {
+     
+    display: flex;
+    align-items: center;
+    
+}
+
+.nav-itens li {
+    list-style: none;
+    text-decoration: none;
+}
+
+.nav-itens a {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 50px;
+    letter-spacing: 1px;
+    font-size: 18px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding: 2px 10px;
+}
+
+.btn-princial {
+    background-color: #2c2c2c;
+}
+
+.inicial-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0% 10% ;
+    
+}
+
+.inicial-area  h1 {
+    color: #fff;
+    font-size: 4rem;
+    text-align: center;
+    line-height: 4rem;
+  
+    
+}
+
+ .title-principal {
+    letter-spacing: 0.5rem;
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: #fff;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+    
+}
+
+
+.astronauta {
+      
+        display: flex;
+        justify-content: center;
+       
+        animation: mymove 4s infinite;
+}
+
+@keyframes mymove {
+        
+
+      100% {
+        transform: translateY(100px);
+    }
+
+   0% {
+        transform: translateY(0PX);
+    }
+    
+}
+
+/* responsivo para celular 
+
+.astronauta {
+    width: auto;
+    height: 300px;
+}
+
+*/ 
+
+@media screen and (max-width: 600px) {
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 1% 2%;
+}
+
+
+.icone-nav {
+    width: 40px;
+    height: 40px;
+    margin-top: 2px;
+}
+
+.nav-itens li a {
+    text-decoration: none;
+    list-style: none;
+    color: #fff;
+    margin-left: 5px;
+    font-size: 14px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    padding: 2px 5px;
+    text-align: center;
+}
+
+.inicial-area {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+
+}
+
+.astronauta {
+
+    width: 200px;
+    height: 200px;
+
+}
+
+.title-principal {
+     
+    font-size: 2.8rem;
+}
+
+.inicial-area  h1 {
+    font-size: 2rem;
+}
+
+}
